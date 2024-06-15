@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Us{% endblock %}
+
+{% block extra_css %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="contact-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Contact Us</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Get in Touch</h3>
+                <p>Feel free to reach out to us with any questions, concerns, or feedback. Our team is here to assist you.</p>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i>123 Main Street, City, Country</li>
+                    <li><i class="fas fa-phone"></i>(123) 456-7890</li>
+                    <li><i class="fas fa-envelope"></i>info@example.com</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>Send Us a Message</h3>
+                <form id="contact-form" method="post">
+                    <!-- Add form fields here (name, email, message) -->
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

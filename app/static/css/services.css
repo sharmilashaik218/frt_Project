@@ -1,0 +1,27 @@
+/* Services Section */
+.services-section h2 {
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+.service-card {
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-card i {
+    color: #007bff;
+}
+
+.service-image {
+    width: 100%;
+    max-height: 150px; /* Adjust height as needed */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}

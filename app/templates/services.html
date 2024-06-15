@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+
+{% block title %}Our Services{% endblock %}
+
+{% block extra_css %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/services.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="services-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service-card text-center p-4">
+                    <img src="{% static 'images/general_checkup.jpg' %}" alt="General Checkup" class="service-image mb-3">
+                    <h4>General Checkups</h4>
+                    <p>Regular health checkups to ensure your well-being.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card text-center p-4">
+                    <img src="{% static 'images/cardiology.jpeg' %}" alt="Cardiology" class="service-image mb-3">
+                    <h4>Cardiology</h4>
+                    <p>Expert cardiology services for your heart health.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card text-center p-4">
+                    <img src="{% static 'images/pharmacy.jpg' %}" alt="Pharmacy" class="service-image mb-3">
+                    <h4>Pharmacy</h4>
+                    <p>Convenient access to all your prescription needs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Additional Services Section -->
+<section class="additional-services-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Additional Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service-card text-center p-4">
+                    <i class="fas fa-utensils fa-3x mb-3 text-primary"></i>
+                    <h4>Nutrition Counseling</h4>
+                    <p>Personalized nutrition plans and counseling for healthy eating habits.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card text-center p-4">
+                    <i class="fas fa-running fa-3x mb-3 text-primary"></i>
+                    <h4>Physical Therapy</h4>
+                    <p>Rehabilitation services to help patients recover from injuries or surgeries.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card text-center p-4">
+                    <i class="fas fa-brain fa-3x mb-3 text-primary"></i>
+                    <h4>Mental Health Counseling</h4>
+                    <p>Counseling sessions and support groups for mental health issues.</p>
+                </div>
+            </div>
+            <!-- Add more service cards here -->
+            <div class="col-md-4">
+                <div class="service-card text-center p-4">
+                    <i class="fas fa-tooth fa-3x mb-3 text-primary"></i>
+                    <h4>Dental Services</h4>
+                    <p>Dental check-ups, cleanings, and other dental procedures for comprehensive healthcare.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card text-center p-4">
+                    <i class="fas fa-venus-mars fa-3x mb-3 text-primary"></i>
+                    <h4>Women's Health Services</h4>
+                    <p>Specialized services including prenatal care, gynecological exams, and family planning.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card text-center p-4">
+                    <i class="fas fa-dumbbell fa-3x mb-3 text-primary"></i>
+                    <h4>Fitness Classes</h4>
+                    <p>Offer fitness classes or workshops focused on yoga, pilates, or aerobics.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Specialized Treatments Section -->
+<section class="specialized-treatments-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Specialized Treatments</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service-card text-center p-4">
+                    <img src="{% static 'images/adi.jpeg' %}" alt="Advanced Diagnostic Imaging" class="service-image mb-3">
+                    <h4>Advanced Diagnostic Imaging</h4>
+                    <p>State-of-the-art diagnostic imaging techniques for accurate diagnosis.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card text-center p-4">
+                    <img src="{% static 'images/pulmonary_function_testing.jpg' %}" alt="Pulmonary Function Testing" class="service-image mb-3">
+                    <h4>Pulmonary Function Testing</h4>
+                    <p>Comprehensive testing to assess lung function and respiratory health.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card text-center p-4">
+                    <img src="{% static 'images/occupational_therapy.jpg' %}" alt="Occupational Therapy" class="service-image mb-3">
+                    <h4>Occupational Therapy</h4>
+                    <p>Customized therapy programs to improve daily functioning and independence.</p>
+                </div>
+            </div>
+            <!-- Add more specialized treatment cards here -->
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

@@ -1,0 +1,208 @@
+{% extends 'base.html' %}
+
+{% block title %}About Us{% endblock %}
+
+{% block extra_css %}
+{% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
+{% endblock %}
+
+{% block content %}
+<section id="mission-section" class="about-section py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10 text-center">
+                <h2 class="section-title">Our Mission</h2>
+                <p class="mission-text">We are committed to providing high-quality healthcare services with compassion and integrity. Our mission is to improve the health and well-being of our community through accessible and personalized care.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="values-section py-5">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h2 class="section-title">Our Values</h2>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="value-box">
+                    <i class="fas fa-heartbeat value-icon"></i>
+                    <h3>Quality Care</h3>
+                    <p>We ensure the highest standards of medical care for our patients.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="value-box">
+                    <i class="fas fa-hand-holding-heart value-icon"></i>
+                    <h3>Compassion</h3>
+                    <p>Our approach is centered on empathy and understanding.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="value-box">
+                    <i class="fas fa-user-shield value-icon"></i>
+                    <h3>Integrity</h3>
+                    <p>We adhere to the highest ethical standards in all our actions.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="value-box">
+                    <i class="fas fa-lightbulb value-icon"></i>
+                    <h3>Innovation</h3>
+                    <p>We embrace new ideas and technologies to improve care.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="value-box">
+                    <i class="fas fa-users value-icon"></i>
+                    <h3>Community Engagement</h3>
+                    <p>We actively participate in and support our local community.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="value-box">
+                    <i class="fas fa-globe value-icon"></i>
+                    <h3>Sustainability</h3>
+                    <p>We are committed to sustainable practices that benefit the environment and our community.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="team-section py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Meet Our Team</h2>
+        <div id="teamCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <div class="team-member">
+                                <img src="{% static 'images/team-member4.jpg' %}" alt="Team Member" class="img-fluid">
+                                <div class="member-info">
+                                    <h5>Dr. Michael Adams</h5>
+                                    <p>Cardiologist</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="team-member">
+                                <img src="{% static 'images/team-member2.jpg' %}" alt="Team Member" class="img-fluid">
+                                <div class="member-info">
+                                    <h5>Dr. Sarah Brown</h5>
+                                    <p>Dermatologist</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="team-member">
+                                <img src="{% static 'images/team-member3.jpg' %}" alt="Team Member" class="img-fluid">
+                                <div class="member-info">
+                                    <h5>Dr. James Wilson</h5>
+                                    <p>Neurologist</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <div class="team-member">
+                                <img src="{% static 'images/team-member6.jpg' %}" alt="Team Member" class="img-fluid">
+                                <div class="member-info">
+                                    <h5>Dr. Lisa Taylor</h5>
+                                    <p>Pediatrician</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="team-member">
+                                <img src="{% static 'images/team-member1.jpg' %}" alt="Team Member" class="img-fluid">
+                                <div class="member-info">
+                                    <h5>Dr. Emma Green</h5>
+                                    <p>General Practitioner</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="team-member">
+                                <img src="{% static 'images/team-member5.png' %}" alt="Team Member" class="img-fluid">
+                                <div class="member-info">
+                                    <h5>Dr. David Brown</h5>
+                                    <p>Surgeon</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#teamCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#teamCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="facilities-section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center mb-5">
+                <h2 class="section-title">Our Facilities</h2>
+                <p class="facility-text">Experience our state-of-the-art facilities designed to provide the highest standards of care. Equipped with the latest medical technology, our facilities ensure a comfortable and efficient healthcare experience for our patients.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="facility-image-wrapper">
+                    <img src="{% static 'images/Facility 1.jpg' %}" alt="Facility 1" class="img-fluid facility-image">
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="facility-image-wrapper">
+                    <img src="{% static 'images/Facility 2.jpg' %}" alt="Facility 2" class="img-fluid facility-image">
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="facility-image-wrapper">
+                    <img src="{% static 'images/Facility 3.jpg' %}" alt="Facility 3" class="img-fluid facility-image">
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="facility-image-wrapper">
+                    <img src="{% static 'images/Facility 4.png' %}" alt="Facility 4" class="img-fluid facility-image">
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="facility-image-wrapper">
+                    <img src="{% static 'images/Facility 5.jpg' %}" alt="Facility 5" class="img-fluid facility-image">
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="facility-image-wrapper">
+                    <img src="{% static 'images/Facility 6.jpg' %}" alt="Facility 5" class="img-fluid facility-image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Fade in mission section on page load
+        $("#mission-section").fadeIn(1000);
+    });
+</script>
+
+{% endblock %}

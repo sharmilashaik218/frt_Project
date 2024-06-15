@@ -1,0 +1,41 @@
+/* Appointment Page */
+.appointment-section {
+    padding: 80px 0; /* Adjust padding for space */
+    text-align: center; /* Center align text */
+}
+
+.appointment-section h2 {
+    color: #007bff; /* Set title color */
+    margin-bottom: 30px; /* Add margin below title */
+}
+
+/* Appointment Form */
+#appointment-form .form-group {
+    margin-bottom: 20px; /* Add margin between form elements */
+}
+
+#appointment-form label {
+    font-weight: bold; /* Make labels bold */
+}
+
+#appointment-form textarea {
+    resize: none; /* Disable textarea resize */
+}
+
+/* Available Doctors List */
+.available-doctors-list {
+    list-style: none; /* Remove default list style */
+    padding: 0; /* Remove default list padding */
+}
+
+.available-doctors-list li {
+    margin-bottom: 10px; /* Add margin between list items */
+}
+
+.available-doctors-list li strong {
+    font-weight: bold; /* Make doctor names bold */
+}
+
+.available-doctors-list li p {
+    margin: 0; /* Remove margin for paragraph */
+}

@@ -1,0 +1,357 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block extra_css %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="hero-section">
+    <div id="heroCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('{% static 'images/hero-image.jpg' %}')">
+                <div class="carousel-overlay"></div>
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <h1 class="display-4 text-white">Welcome to HealthEase</h1>
+                            <p class="lead text-white">Your health is our priority. Book your medical appointments with ease and get access to top-notch healthcare services.</p>
+                            <a href="{% url 'book_appointment' %}" class="btn btn-primary btn-lg mt-4">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('{% static 'images/hero-image2.jpg' %}')">
+                <div class="carousel-overlay"></div>
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <h1 class="display-4 text-white">Quality Healthcare</h1>
+                            <p class="lead text-white">We provide the best healthcare services with a team of experienced professionals.</p>
+                            <a href="{% url 'services' %}" class="btn btn-primary btn-lg mt-4">Our Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('{% static 'images/hero-image3.jpg' %}')">
+                <div class="carousel-overlay"></div>
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <h1 class="display-4 text-white">Expert Care</h1>
+                            <p class="lead text-white">Our experts are here to provide you with the best medical care and support.</p>
+                            <a href="{% url 'about' %}" class="btn btn-primary btn-lg mt-4">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
+
+<section class="services-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service-card text-center p-4">
+                    <i class="fas fa-stethoscope fa-3x mb-3 text-primary"></i>
+                    <h4>General Checkups</h4>
+                    <p>Regular health checkups to ensure your well-being.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card text-center p-4">
+                    <i class="fas fa-heartbeat fa-3x mb-3 text-primary"></i>
+                    <h4>Cardiology</h4>
+                    <p>Expert cardiology services for your heart health.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card text-center p-4">
+                    <i class="fas fa-pills fa-3x mb-3 text-primary"></i>
+                    <h4>Pharmacy</h4>
+                    <p>Convenient access to all your prescription needs.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Additional Services Section -->
+<section class="additional-services-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Additional Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service-card text-center p-4">
+                    <i class="fas fa-utensils fa-3x mb-3 text-primary"></i>
+                    <h4>Nutrition Counseling</h4>
+                    <p>Personalized nutrition plans and counseling for healthy eating habits.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card text-center p-4">
+                    <i class="fas fa-running fa-3x mb-3 text-primary"></i>
+                    <h4>Physical Therapy</h4>
+                    <p>Rehabilitation services to help patients recover from injuries or surgeries.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card text-center p-4">
+                    <i class="fas fa-brain fa-3x mb-3 text-primary"></i>
+                    <h4>Mental Health Counseling</h4>
+                    <p>Counseling sessions and support groups for mental health issues.</p>
+                </div>
+            </div>
+            <!-- Add more service cards here -->
+            <div class="col-md-4">
+                <div class="service-card text-center p-4">
+                    <i class="fas fa-tooth fa-3x mb-3 text-primary"></i>
+                    <h4>Dental Services</h4>
+                    <p>Dental check-ups, cleanings, and other dental procedures for comprehensive healthcare.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card text-center p-4">
+                    <i class="fas fa-venus-mars fa-3x mb-3 text-primary"></i>
+                    <h4>Women's Health Services</h4>
+                    <p>Specialized services including prenatal care, gynecological exams, and family planning.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card text-center p-4">
+                    <i class="fas fa-dumbbell fa-3x mb-3 text-primary"></i>
+                    <h4>Fitness Classes</h4>
+                    <p>Offer fitness classes or workshops focused on yoga, pilates, or aerobics.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="about-section py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="{% static 'images/about-us.jpg' %}" alt="About Us" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h2>About HealthEase</h2>
+                <p>We are dedicated to providing top-quality healthcare services. Our team of experienced professionals is here to support you every step of the way.</p>
+                <a href="{% url 'about' %}" class="btn btn-outline-primary mt-3">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Testimonials</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="testimonial-card p-4">
+                    <div class="testimonial-content">
+                        <p class="lead">"HealthEase provided exceptional care during my treatment. The staff was very supportive and professional."</p>
+                    </div>
+                    <div class="testimonial-footer">
+                        <img src="{% static 'images/avatar.jpg' %}" class="testimonial-avatar" alt="John Doe">
+                        <h5>John Doe</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-card p-4">
+                    <div class="testimonial-content">
+                        <p class="lead">"I had a wonderful experience at HealthEase. The doctors are highly knowledgeable and caring."</p>
+                    </div>
+                    <div class="testimonial-footer">
+                        <img src="{% static 'images/avatar2.jpeg' %}" class="testimonial-avatar" alt="Jane Smith">
+                        <h5>Jane Smith</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-card p-4">
+                    <div class="testimonial-content">
+                        <p class="lead">"The facilities at HealthEase are top-notch. I highly recommend their services."</p>
+                    </div>
+                    <div class="testimonial-footer">
+                        <img src="{% static 'images/avatar3.jpg' %}" class="testimonial-avatar" alt="Emily Johnson">
+                        <h5>Emily Johnson</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="team-section py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Meet Our Team</h2>
+        <div id="teamCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <div class="team-member">
+                                <img src="{% static 'images/team-member4.jpg' %}" alt="Team Member" class="img-fluid">
+                                <div class="member-info">
+                                    <h5>Dr. Michael Adams</h5>
+                                    <p>Cardiologist</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="team-member">
+                                <img src="{% static 'images/team-member2.jpg' %}" alt="Team Member" class="img-fluid">
+                                <div class="member-info">
+                                    <h5>Dr. Sarah Brown</h5>
+                                    <p>Dermatologist</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="team-member">
+                                <img src="{% static 'images/team-member3.jpg' %}" alt="Team Member" class="img-fluid">
+                                <div class="member-info">
+                                    <h5>Dr. James Wilson</h5>
+                                    <p>Neurologist</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <div class="team-member">
+                                <img src="{% static 'images/team-member6.jpg' %}" alt="Team Member" class="img-fluid">
+                                <div class="member-info">
+                                    <h5>Dr. Lisa Taylor</h5>
+                                    <p>Pediatrician</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="team-member">
+                                <img src="{% static 'images/team-member1.jpg' %}" alt="Team Member" class="img-fluid">
+                                <div class="member-info">
+                                    <h5>Dr. Emma Green</h5>
+                                    <p>General Practitioner</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="team-member">
+                                <img src="{% static 'images/team-member5.png' %}" alt="Team Member" class="img-fluid">
+                                <div class="member-info">
+                                    <h5>Dr. David Brown</h5>
+                                    <p>Surgeon</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#teamCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#teamCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="news-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Latest News</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="news-card p-4">
+                    <h5>HealthEase Expands Services</h5>
+                    <p>We are excited to announce the expansion of our services to include a new state-of-the-art cardiology unit.</p>
+                    <a href="#" class="btn btn-outline-primary mt-3">Read More</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="news-card p-4">
+                    <h5>New Pediatrician Joins HealthEase</h5>
+                    <p>We are pleased to welcome Dr. Lisa Taylor, a highly experienced pediatrician, to our team.</p>
+                    <a href="#" class="btn btn-outline-primary mt-3">Read More</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="news-card p-4">
+                    <h5>Community Health Fair</h5>
+                    <p>Join us for our annual community health fair, offering free health screenings and wellness tips.</p>
+                    <a href="#" class="btn btn-outline-primary mt-3">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section py-5 text-center">
+    <div class="container">
+        <h2>Ready to Take Charge of Your Health?</h2>
+        <p class="lead">Book your appointment today and experience the best healthcare services.</p>
+        <a href="{% url 'book_appointment' %}" class="btn btn-light btn-lg">Book Appointment</a>
+    </div>
+</section>
+
+<section class="contact-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Contact Us</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Address</h4>
+                <p>123 HealthEase St., Wellness City, Healthy State, 45678</p>
+                <h4>Email</h4>
+                <p>contact@healthease.com</p>
+                <h4>Phone</h4>
+                <p>(123) 456-7890</p>
+            </div>
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'js/home.js' %}"></script>
+{% endblock %}

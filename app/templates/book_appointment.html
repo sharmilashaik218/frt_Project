@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block title %}Book Appointment{% endblock %}
+
+{% block extra_css %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/appointment.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="book-appointment-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Book Appointment</h2>
+        {% if messages %}
+        <div class="alert alert-success" role="alert">
+            {% for message in messages %}
+                {{ message }}
+            {% endfor %}
+        </div>
+        {% endif %}
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Appointment Details</h3>
+                <form id="appointment-form" method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="date">Date:</label>
+                        <input type="date" class="form-control" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time:</label>
+                        <input type="time" class="form-control" id="time" name="time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="doctor">Doctor:</label>
+                        <select class="form-control" id="doctor" name="doctor" required>
+                            <option value="">Select Doctor</option>
+                            <option value="1">Dr. John Doe</option>
+                            <option value="2">Dr. Jane Smith</option>
+                            <!-- Add more options for doctors -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Additional Message:</label>
+                        <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Book Appointment</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h3>Available Doctors</h3>
+                <ul class="available-doctors-list">
+                    <li><strong>Dr. John Doe</strong><br> Cardiologist</li>
+                    <li><strong>Dr. Jane Smith</strong><br> Dermatologist</li>
+                    <!-- Add more available doctors here -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
