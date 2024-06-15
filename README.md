@@ -5,6 +5,8 @@ Industry: Healthcare
 
 Project Title: HealthEase
 
+Project Demo video url ::  https://drive.google.com/file/d/1wqd38hOxtL2nFxOv6gsu7dbpf3ki6bEH/view?usp=sharing
+
 Problem Statement/Opportunity:
 HealthEase aims to address the accessibility and efficiency issues in booking healthcare appointments and obtaining preliminary health advice. Many patients encounter difficulties scheduling appointments and receiving timely responses to their health inquiries. HealthEase offers an integrated platform that simplifies appointment scheduling and provides instant health advice through an AI-driven health bot, enhancing patient engagement and satisfaction.
 
