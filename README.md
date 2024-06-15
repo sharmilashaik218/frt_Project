@@ -41,3 +41,43 @@ Additional Azure Services:
 By leveraging these Azure services, HealthEase ensures a comprehensive, secure, and scalable solution to improve healthcare accessibility and patient satisfaction.
 
 Screenshots : 
+
+
+![Screenshot 1](https://github.com/sharmilashaik218/frt_Project/raw/a4e5a192bf308741dce0636b981720088198c8e0/Screenshot%202024-06-14%20223943.png)
+
+
+![Screenshot 2](https://github.com/sharmilashaik218/frt_Project/raw/a4e5a192bf308741dce0636b981720088198c8e0/Screenshot%202024-06-14%20224006.png)
+
+
+![Screenshot 3](https://github.com/sharmilashaik218/frt_Project/raw/a4e5a192bf308741dce0636b981720088198c8e0/Screenshot%202024-06-14%20224018.png)
+
+
+![Screenshot 4](https://github.com/sharmilashaik218/frt_Project/raw/a4e5a192bf308741dce0636b981720088198c8e0/Screenshot%202024-06-14%20224036.png)
+
+
+![Screenshot 5](https://github.com/sharmilashaik218/frt_Project/raw/a4e5a192bf308741dce0636b981720088198c8e0/Screenshot%202024-06-14%20224045.png)
+
+
+![Screenshot 6](https://github.com/sharmilashaik218/frt_Project/raw/a4e5a192bf308741dce0636b981720088198c8e0/Screenshot%202024-06-14%20224052.png)
+
+
+![Screenshot 7](https://github.com/sharmilashaik218/frt_Project/raw/a4e5a192bf308741dce0636b981720088198c8e0/Screenshot%202024-06-14%20224106.png)
+
+
+![Screenshot 8](https://github.com/sharmilashaik218/frt_Project/raw/a4e5a192bf308741dce0636b981720088198c8e0/Screenshot%202024-06-14%20224117.png)
+
+
+![Screenshot 9](https://github.com/sharmilashaik218/frt_Project/raw/a4e5a192bf308741dce0636b981720088198c8e0/Screenshot%202024-06-14%20224143.png)
+
+
+![Screenshot 10](https://github.com/sharmilashaik218/frt_Project/raw/a4e5a192bf308741dce0636b981720088198c8e0/Screenshot%202024-06-14%20224216.png)
+
+
+![Screenshot 11](https://github.com/sharmilashaik218/frt_Project/raw/a4e5a192bf308741dce0636b981720088198c8e0/Screenshot%202024-06-14%20224248.png)
+
+
+Azure APP service eployment : 
+
+
+![Screenshot 12](https://github.com/sharmilashaik218/frt_Project/raw/a4e5a192bf308741dce0636b981720088198c8e0/Screenshot%202024-06-15%20134107.png)
+
