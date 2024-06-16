@@ -2,7 +2,7 @@ This is the final project I have done  as a part of my Microsoft Future Ready Ta
 
 
 
-Certainly! Here's a neatly formatted version of the information you provided, with subheadings bolded and adjusted for clarity:
+
 
 Industry: Healthcare
 
